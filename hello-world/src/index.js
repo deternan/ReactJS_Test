@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import AppClick from './AppTT';
+import TextColumn from './TextComponent';
 import reportWebVitals from './reportWebVitals';
 
 
@@ -20,9 +21,10 @@ const multiButton = () => {
 ReactDOM.render(
 
     <div>      
-        <AppClick name="Click Button" />
-        
+        <AppClick name="Click Button" />        
+        <TextColumn name='inputColumn' />
     </div>,
+    
     /*
     <div>
         <AppTT onClick={() => changeText("newText")}>{buttonText}</AppTT>        
@@ -34,7 +36,4 @@ ReactDOM.render(
         document.getElementById('root')
     );
     
-    // If you want to start measuring performance in your app, pass a function
-    // to log results (for example: reportWebVitals(console.log))
-    // or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
     reportWebVitals();
